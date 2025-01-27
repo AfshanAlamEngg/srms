@@ -33,19 +33,22 @@ MyResult is an online result management system designed to provide worldwide acc
     cd myresult
     ```
 
-2. **Install dependencies:**
+2. **Place the clone folder in the www folder of wamp server name it as tutorial**
     ```sh
-    composer install
+    cd wamp
+    cd www
+    mkdir tutorial
     ```
+    Paste your code in the above folder
 
 3. **Create a MySQL database:**
     ```sql
-    CREATE DATABASE myresult_db;
+    CREATE DATABASE srms;
     ```
 
 4. **Import the database schema:**
     ```sh
-    mysql -u username -p myresult_db < database/schema.sql
+    mysql -u username -p some_password < database/srms.sql
     ```
 
 5. **Configure the database connection:**
@@ -54,7 +57,7 @@ MyResult is an online result management system designed to provide worldwide acc
     define('DB_SERVER', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');
-    define('DB_NAME', 'myresult_db');
+    define('DB_NAME', 'srms');
     ```
 
 6. **Start the web server:**
